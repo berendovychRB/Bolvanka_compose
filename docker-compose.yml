@@ -16,6 +16,7 @@ services:
     build:
       context: "../bolvanka_bot"
       dockerfile: Dockerfile
+    env_file: ../bolvanka_bot/.env
     volumes:
       - .:/src
     ports:
